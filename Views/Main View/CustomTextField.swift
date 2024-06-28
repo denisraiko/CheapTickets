@@ -74,8 +74,6 @@ struct OverlayView: View {
         .cornerRadius(16)
         .shadow(color: Color(red: 0/255, green: 0/255, blue: 0/255, opacity: 1.25), radius: 4, x: 0, y: 4)
     }
-    
-    
 }
 
 struct CustomTextFieldView: View {

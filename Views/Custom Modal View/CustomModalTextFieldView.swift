@@ -6,7 +6,18 @@
 //
 
 import SwiftUI
-import Combine
+
+
+struct CustomModalTextFieldView: View {
+    @Binding var showModal: Bool
+    @Binding var destinationText: String
+
+
+    var body: some View {
+        OverlayModalTextField(destination: $destinationText, showModal: $showModal)
+            .padding(.horizontal, 16)
+    }
+}
 
 struct PlaceholderModalTextField: View {
     var placeholder: String
@@ -23,8 +34,6 @@ struct PlaceholderModalTextField: View {
                     .padding(.leading, 10)
             }
             TextField("", text: $text)
-                
-                
                 .foregroundColor(.white)
                 .font(.custom("SF Pro Display", size: 16))
                 .padding(.leading, 10)
@@ -67,18 +76,6 @@ struct OverlayModalTextField: View {
         .shadow(color: Color(red: 0/255, green: 0/255, blue: 0/255, opacity: 1.25), radius: 4, x: 0, y: 4)
     }
 }
-
-struct CustomModalTextFieldView: View {
-    @Binding var showModal: Bool
-    @Binding var destinationText: String
-
-
-    var body: some View {
-        OverlayModalTextField(destination: $destinationText, showModal: $showModal)
-            .padding(.horizontal, 16)
-    }
-}
-
 
 #Preview {
     CustomModalTextFieldView(showModal: .constant(true), destinationText: .constant(""))

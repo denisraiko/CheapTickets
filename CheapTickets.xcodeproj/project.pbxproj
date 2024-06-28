@@ -10,6 +10,8 @@
 		3B28D1342C281BB80023B399 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B28D1332C281BB80023B399 /* CustomTextField.swift */; };
 		3B28D13F2C2856F50023B399 /* CustomModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B28D13E2C2856F50023B399 /* CustomModalView.swift */; };
 		3B28D1412C285BF00023B399 /* CustomModalTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B28D1402C285BF00023B399 /* CustomModalTextFieldView.swift */; };
+		3B28D1482C2C926B0023B399 /* TicketSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B28D1472C2C926B0023B399 /* TicketSearchView.swift */; };
+		3B28D14D2C2F206D0023B399 /* CustomSearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B28D14C2C2F206D0023B399 /* CustomSearchTextField.swift */; };
 		3B2ECDF92C24920A009841E2 /* CheapTicketsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2ECDF82C24920A009841E2 /* CheapTicketsApp.swift */; };
 		3B2ECDFB2C24920A009841E2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2ECDFA2C24920A009841E2 /* ContentView.swift */; };
 		3B2ECDFD2C24920C009841E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B2ECDFC2C24920C009841E2 /* Assets.xcassets */; };
@@ -24,6 +26,8 @@
 		3B28D1332C281BB80023B399 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		3B28D13E2C2856F50023B399 /* CustomModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModalView.swift; sourceTree = "<group>"; };
 		3B28D1402C285BF00023B399 /* CustomModalTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModalTextFieldView.swift; sourceTree = "<group>"; };
+		3B28D1472C2C926B0023B399 /* TicketSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketSearchView.swift; sourceTree = "<group>"; };
+		3B28D14C2C2F206D0023B399 /* CustomSearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchTextField.swift; sourceTree = "<group>"; };
 		3B2ECDF52C24920A009841E2 /* CheapTickets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheapTickets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B2ECDF82C24920A009841E2 /* CheapTicketsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheapTicketsApp.swift; sourceTree = "<group>"; };
 		3B2ECDFA2C24920A009841E2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,6 +50,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B28D1492C2F1FBC0023B399 /* Custom Modal View */ = {
+			isa = PBXGroup;
+			children = (
+				3B28D1402C285BF00023B399 /* CustomModalTextFieldView.swift */,
+				3B28D13E2C2856F50023B399 /* CustomModalView.swift */,
+			);
+			path = "Custom Modal View";
+			sourceTree = "<group>";
+		};
+		3B28D14A2C2F1FF10023B399 /* Main View */ = {
+			isa = PBXGroup;
+			children = (
+				3B2ECE102C249CFE009841E2 /* MainView.swift */,
+				3B28D1332C281BB80023B399 /* CustomTextField.swift */,
+			);
+			path = "Main View";
+			sourceTree = "<group>";
+		};
+		3B28D14B2C2F20010023B399 /* Ticket Search View */ = {
+			isa = PBXGroup;
+			children = (
+				3B28D1472C2C926B0023B399 /* TicketSearchView.swift */,
+				3B28D14C2C2F206D0023B399 /* CustomSearchTextField.swift */,
+			);
+			path = "Ticket Search View";
+			sourceTree = "<group>";
+		};
 		3B2ECDEC2C24920A009841E2 = {
 			isa = PBXGroup;
 			children = (
@@ -89,10 +120,9 @@
 			isa = PBXGroup;
 			children = (
 				3B2ECE0A2C249288009841E2 /* TabBarView.swift */,
-				3B2ECE102C249CFE009841E2 /* MainView.swift */,
-				3B28D1332C281BB80023B399 /* CustomTextField.swift */,
-				3B28D13E2C2856F50023B399 /* CustomModalView.swift */,
-				3B28D1402C285BF00023B399 /* CustomModalTextFieldView.swift */,
+				3B28D14A2C2F1FF10023B399 /* Main View */,
+				3B28D1492C2F1FBC0023B399 /* Custom Modal View */,
+				3B28D14B2C2F20010023B399 /* Ticket Search View */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -196,6 +226,8 @@
 				3B28D13F2C2856F50023B399 /* CustomModalView.swift in Sources */,
 				3B2ECE112C249CFE009841E2 /* MainView.swift in Sources */,
 				3B2ECE0D2C249C1D009841E2 /* Offer.swift in Sources */,
+				3B28D1482C2C926B0023B399 /* TicketSearchView.swift in Sources */,
+				3B28D14D2C2F206D0023B399 /* CustomSearchTextField.swift in Sources */,
 				3B2ECDFB2C24920A009841E2 /* ContentView.swift in Sources */,
 				3B2ECE0B2C249288009841E2 /* TabBarView.swift in Sources */,
 				3B2ECDF92C24920A009841E2 /* CheapTicketsApp.swift in Sources */,
