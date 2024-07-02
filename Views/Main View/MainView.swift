@@ -10,6 +10,7 @@ import SwiftUI
 struct MainView: View {
     @ObservedObject var viewModel = MainViewModel()
     @State private var showModal = false
+
     
     var body: some View {
         VStack {
@@ -28,7 +29,7 @@ struct MainView: View {
                 .padding(.top, 20)
             
             HStack {
-                Text("Музыкально отлететь")
+                Text("Рекомендации")
                 //                  .frame(width: 223, height: 26)
                     .font(.custom("SF Pro Display", size: 22))
                     .fontWeight(.bold)
@@ -39,40 +40,38 @@ struct MainView: View {
             .padding(.top, 20)
             .padding(.leading, 16)
             
-            
             ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 67) {
-                    ForEach(viewModel.offers) { offer in
-                        VStack(alignment: .leading, spacing: 8) {
-                            Image(offer.title)
-                                .resizable()
-                                .frame(width: 132, height: 133.16)
+                        HStack(spacing: 5) {
+                            ForEach(viewModel.offers) { offer in
+                                VStack(alignment: .leading, spacing: 8) {
+                                    Image(offer.title)
+                                        .resizable()
+                                        .frame(width: 132, height: 133.16)
+                                        .cornerRadius(16)
+                                    Text(offer.title)
+                                        .font(.custom("SF Pro Display", size: 16))
+                                        .fontWeight(.bold)
+                                        .foregroundColor(.white)
+                                    Text(offer.town)
+                                        .font(.custom("SF Pro Display", size: 14))
+                                        .foregroundColor(.white)
+                                    HStack(spacing: 4) {
+                                        Image("grayPlane")
+                                            .resizable()
+                                            .frame(width: 24, height: 24)
+                                        Text("от \(offer.price.value.formattedWithSeparator) ₽")
+                                            .font(.subheadline)
+                                            .foregroundColor(.white)
+                                            .bold()
+                                    }
+                                }
+                                .padding()
+                                .background(Color.black)
                                 .cornerRadius(16)
-                            Text(offer.title)
-                                .font(.custom("SF Pro Display", size: 16))
-                                .fontWeight(.bold)
-                                .foregroundColor(.white)
-                            Text(offer.town)
-                                .font(.custom("SF Pro Display", size: 14))
-                                .foregroundColor(.white)
-                            HStack(spacing: 4) {
-                                Image("grayPlane")
-                                    .resizable()
-                                    .frame(width: 24, height: 24)
-                                Text("от \(offer.price.value.formattedWithSeparator) ₽")
-                                    .font(.subheadline)
-                                    .foregroundColor(.white)
-                                    .bold()
                             }
                         }
-                        .padding()
-                        .background(Color.black)
+                        .padding(.horizontal)
                     }
-                    
-                }
-                .padding(.horizontal)
-            }
-            .padding(.leading, 16.0)
             Spacer()
         }
         .background(Color.black)
