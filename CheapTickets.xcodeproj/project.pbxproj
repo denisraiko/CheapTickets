@@ -13,13 +13,18 @@
 		3B28D1482C2C926B0023B399 /* TicketSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B28D1472C2C926B0023B399 /* TicketSearchView.swift */; };
 		3B28D14D2C2F206D0023B399 /* CustomSearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B28D14C2C2F206D0023B399 /* CustomSearchTextField.swift */; };
 		3B28D14F2C344C450023B399 /* FilterScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B28D14E2C344C450023B399 /* FilterScrollView.swift */; };
+		3B28D1512C3460290023B399 /* PopularDestinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B28D1502C3460290023B399 /* PopularDestinations.swift */; };
+		3B28D1532C34635E0023B399 /* TicketOffers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B28D1522C34635E0023B399 /* TicketOffers.swift */; };
+		3B28D1552C3464340023B399 /* PopularDestinationsViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B28D1542C3464340023B399 /* PopularDestinationsViewModels.swift */; };
+		3B28D1572C3705F70023B399 /* AllTicketsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B28D1562C3705F70023B399 /* AllTicketsButton.swift */; };
+		3B28D1592C3706CC0023B399 /* PriceSubsriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B28D1582C3706CC0023B399 /* PriceSubsriptionView.swift */; };
 		3B2ECDF92C24920A009841E2 /* CheapTicketsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2ECDF82C24920A009841E2 /* CheapTicketsApp.swift */; };
 		3B2ECDFB2C24920A009841E2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2ECDFA2C24920A009841E2 /* ContentView.swift */; };
 		3B2ECDFD2C24920C009841E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B2ECDFC2C24920C009841E2 /* Assets.xcassets */; };
 		3B2ECE002C24920C009841E2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B2ECDFF2C24920C009841E2 /* Preview Assets.xcassets */; };
 		3B2ECE0B2C249288009841E2 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2ECE0A2C249288009841E2 /* TabBarView.swift */; };
 		3B2ECE0D2C249C1D009841E2 /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2ECE0C2C249C1D009841E2 /* Offer.swift */; };
-		3B2ECE0F2C249CCA009841E2 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2ECE0E2C249CCA009841E2 /* MainViewModel.swift */; };
+		3B2ECE0F2C249CCA009841E2 /* RecomendationOffersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2ECE0E2C249CCA009841E2 /* RecomendationOffersViewModel.swift */; };
 		3B2ECE112C249CFE009841E2 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2ECE102C249CFE009841E2 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +35,11 @@
 		3B28D1472C2C926B0023B399 /* TicketSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketSearchView.swift; sourceTree = "<group>"; };
 		3B28D14C2C2F206D0023B399 /* CustomSearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchTextField.swift; sourceTree = "<group>"; };
 		3B28D14E2C344C450023B399 /* FilterScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterScrollView.swift; sourceTree = "<group>"; };
+		3B28D1502C3460290023B399 /* PopularDestinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularDestinations.swift; sourceTree = "<group>"; };
+		3B28D1522C34635E0023B399 /* TicketOffers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketOffers.swift; sourceTree = "<group>"; };
+		3B28D1542C3464340023B399 /* PopularDestinationsViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularDestinationsViewModels.swift; sourceTree = "<group>"; };
+		3B28D1562C3705F70023B399 /* AllTicketsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTicketsButton.swift; sourceTree = "<group>"; };
+		3B28D1582C3706CC0023B399 /* PriceSubsriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceSubsriptionView.swift; sourceTree = "<group>"; };
 		3B2ECDF52C24920A009841E2 /* CheapTickets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheapTickets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B2ECDF82C24920A009841E2 /* CheapTicketsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheapTicketsApp.swift; sourceTree = "<group>"; };
 		3B2ECDFA2C24920A009841E2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -37,7 +47,7 @@
 		3B2ECDFF2C24920C009841E2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3B2ECE0A2C249288009841E2 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		3B2ECE0C2C249C1D009841E2 /* Offer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
-		3B2ECE0E2C249CCA009841E2 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		3B2ECE0E2C249CCA009841E2 /* RecomendationOffersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecomendationOffersViewModel.swift; sourceTree = "<group>"; };
 		3B2ECE102C249CFE009841E2 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,8 +65,8 @@
 		3B28D1492C2F1FBC0023B399 /* Custom Modal View */ = {
 			isa = PBXGroup;
 			children = (
-				3B28D1402C285BF00023B399 /* CustomModalTextFieldView.swift */,
 				3B28D13E2C2856F50023B399 /* CustomModalView.swift */,
+				3B28D1402C285BF00023B399 /* CustomModalTextFieldView.swift */,
 			);
 			path = "Custom Modal View";
 			sourceTree = "<group>";
@@ -76,6 +86,9 @@
 				3B28D1472C2C926B0023B399 /* TicketSearchView.swift */,
 				3B28D14C2C2F206D0023B399 /* CustomSearchTextField.swift */,
 				3B28D14E2C344C450023B399 /* FilterScrollView.swift */,
+				3B28D1502C3460290023B399 /* PopularDestinations.swift */,
+				3B28D1562C3705F70023B399 /* AllTicketsButton.swift */,
+				3B28D1582C3706CC0023B399 /* PriceSubsriptionView.swift */,
 			);
 			path = "Ticket Search View";
 			sourceTree = "<group>";
@@ -133,7 +146,8 @@
 		3B2ECE072C24924C009841E2 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				3B2ECE0E2C249CCA009841E2 /* MainViewModel.swift */,
+				3B2ECE0E2C249CCA009841E2 /* RecomendationOffersViewModel.swift */,
+				3B28D1542C3464340023B399 /* PopularDestinationsViewModels.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -142,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				3B2ECE0C2C249C1D009841E2 /* Offer.swift */,
+				3B28D1522C34635E0023B399 /* TicketOffers.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -224,16 +239,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B28D1412C285BF00023B399 /* CustomModalTextFieldView.swift in Sources */,
+				3B28D1592C3706CC0023B399 /* PriceSubsriptionView.swift in Sources */,
 				3B28D1342C281BB80023B399 /* CustomTextField.swift in Sources */,
-				3B2ECE0F2C249CCA009841E2 /* MainViewModel.swift in Sources */,
+				3B2ECE0F2C249CCA009841E2 /* RecomendationOffersViewModel.swift in Sources */,
 				3B28D13F2C2856F50023B399 /* CustomModalView.swift in Sources */,
 				3B2ECE112C249CFE009841E2 /* MainView.swift in Sources */,
+				3B28D1512C3460290023B399 /* PopularDestinations.swift in Sources */,
 				3B28D14F2C344C450023B399 /* FilterScrollView.swift in Sources */,
 				3B2ECE0D2C249C1D009841E2 /* Offer.swift in Sources */,
 				3B28D1482C2C926B0023B399 /* TicketSearchView.swift in Sources */,
 				3B28D14D2C2F206D0023B399 /* CustomSearchTextField.swift in Sources */,
 				3B2ECDFB2C24920A009841E2 /* ContentView.swift in Sources */,
 				3B2ECE0B2C249288009841E2 /* TabBarView.swift in Sources */,
+				3B28D1552C3464340023B399 /* PopularDestinationsViewModels.swift in Sources */,
+				3B28D1572C3705F70023B399 /* AllTicketsButton.swift in Sources */,
+				3B28D1532C34635E0023B399 /* TicketOffers.swift in Sources */,
 				3B2ECDF92C24920A009841E2 /* CheapTicketsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

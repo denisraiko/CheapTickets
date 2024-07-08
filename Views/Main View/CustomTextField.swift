@@ -41,7 +41,7 @@ struct PlaceholderTextField: View {
 }
 
 struct OverlayView: View {
-    @ObservedObject var viewModel = MainViewModel()
+    @ObservedObject var viewModel = RecomendationOffersViewModel()
     @State private var departure: String = ""
     @State private var destination: String = ""
     @Binding var showModal: Bool

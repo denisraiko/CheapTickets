@@ -61,7 +61,7 @@ import SwiftUI
 //}
 
 
-class MainViewModel: ObservableObject {
+class RecomendationOffersViewModel: ObservableObject {
     @Published var fromLocation: String = UserDefaults.standard.string(forKey: "fromLocation") ?? "Москва"
     @Published var toLocation: String = UserDefaults.standard.string(forKey: "toLocation") ?? "Турция"
     @Published var offers: [Offer] = [
@@ -70,19 +70,6 @@ class MainViewModel: ObservableObject {
         Offer(id: 3, title: "Лампабикт", town: "Москва", price: Offer.Price(value: 2390))
     ]
 
-    private var cancellables = Set<AnyCancellable>()
-
-    init() {
-        loadOffers()
-    }
-
-    func saveFromLocation() {
-        UserDefaults.standard.set(self.fromLocation, forKey: "fromLocation")
-    }
-
-    func loadOffers() {
-        // Данные уже загружены из встроенного массива offers
-    }
 }
 
 

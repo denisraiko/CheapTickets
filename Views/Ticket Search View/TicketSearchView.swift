@@ -9,16 +9,27 @@ import SwiftUI
 
 struct TicketSearchView: View {
     @Binding var showModal: Bool
-
-
-    var body: some View {
-        
-        CustomSearchTextField(showModal: $showModal)
     
+    
+    var body: some View {
+        VStack {
+            CustomSearchTextField(showModal: $showModal)
+                .padding(.top)
+            FilterScrollView()
+                .padding(.top)
+                .padding(.horizontal)
+            PopularDestinations()
+                .padding(.top)
+            AllTicketsButton()
+                .padding(.top)
+            PriceSubsriptionView()
+                .padding(.top)
+            Spacer()
+        }
+        .background(Color.black)
     }
+    
 }
-
-
 
 #Preview {
     TicketSearchView(showModal: .constant(true))

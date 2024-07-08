@@ -12,41 +12,37 @@ struct CustomModalView: View {
     @Binding var showModal: Bool
     @State private var isPlugger = false
     @State private var destinationText = ""
-    
+    @State private var showTicketSearchView: Bool = false
+
     var body: some View {
         VStack {
-            SwipeRectingle()
-            
-            
+            SwipeRectangle()
             
             if isPlugger {
                 PlaceHolderView(isPlugger: $isPlugger)
             } else {
-                CustomModalTextFieldView(showModal: $showModal, destinationText: $destinationText)
-                    .padding(.top, 26)
+                CustomModalTextFieldView(showModal: $showModal, destinationText: $destinationText, showTicketSearchView: $showTicketSearchView)
+                    .padding(.top, 30)
                 HorizontalElements(isPlugger: $isPlugger, destinationText: $destinationText)
                     .padding(.top, 26)
                 TopDestinations(isPlugger: $isPlugger, destinationCity: $destinationText)
                     .padding(.top, 26)
                     .padding(.horizontal, 16)
             }
-            
-    
-            
-            
-            
-            
-            
+
             Spacer()
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color(red: 36/255, green: 37/255, blue: 41/255))
         .foregroundColor(.white)
         .edgesIgnoringSafeArea(.all)
+        .sheet(isPresented: $showTicketSearchView) {
+            TicketSearchView(showModal: $showTicketSearchView)
+        }
     }
 }
 
-struct SwipeRectingle: View {
+struct SwipeRectangle: View {
     var body: some View {
         VStack {
             Rectangle()

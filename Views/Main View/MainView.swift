@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MainView: View {
-    @ObservedObject var viewModel = MainViewModel()
+    @ObservedObject var recomendationsModel = RecomendationOffersViewModel()
     @State private var showModal = false
 
     
@@ -42,7 +42,7 @@ struct MainView: View {
             
             ScrollView(.horizontal, showsIndicators: false) {
                         HStack(spacing: 5) {
-                            ForEach(viewModel.offers) { offer in
+                            ForEach(recomendationsModel.offers) { offer in
                                 VStack(alignment: .leading, spacing: 8) {
                                     Image(offer.title)
                                         .resizable()
@@ -75,7 +75,7 @@ struct MainView: View {
             Spacer()
         }
         .background(Color.black)
-        .sheet(isPresented: $showModal) {
+        .fullScreenCover(isPresented: $showModal) {
             CustomModalView(showModal: $showModal)
                 .background(Color(red: 36/255, green: 37/255, blue: 41/255))
         }

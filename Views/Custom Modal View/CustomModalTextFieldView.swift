@@ -11,10 +11,11 @@ import SwiftUI
 struct CustomModalTextFieldView: View {
     @Binding var showModal: Bool
     @Binding var destinationText: String
+    @Binding var showTicketSearchView: Bool
 
 
     var body: some View {
-        OverlayModalTextField(destination: $destinationText, showModal: $showModal)
+        OverlayModalTextField(destination: $destinationText, showModal: $showModal, showTicketSearchView: $showTicketSearchView)
             .padding(.horizontal, 16)
     }
 }
@@ -24,28 +25,32 @@ struct PlaceholderModalTextField: View {
     @Binding var text: String
     @Binding var destinationText: String
 
-
     var body: some View {
         ZStack(alignment: .leading) {
             if text.isEmpty {
                 Text(placeholder)
+                    .frame(height: 30)
                     .foregroundColor(Color(red: 159/255, green: 159/255, blue: 159/255))
                     .font(.custom("SF Pro Display", size: 16))
                     .padding(.leading, 10)
             }
-            TextField("", text: $text)
+            TextField(placeholder, text: $text)
+                .frame(height: 35)
                 .foregroundColor(.white)
                 .font(.custom("SF Pro Display", size: 16))
                 .padding(.leading, 10)
+
         }
     }
 }
 
 struct OverlayModalTextField: View {
-    @ObservedObject var viewModel = MainViewModel()
+    @ObservedObject var viewModel = RecomendationOffersViewModel()
     @State private var departure: String = ""
     @Binding var destination: String
     @Binding var showModal: Bool
+    @Binding var showTicketSearchView: Bool
+
 
     var body: some View {
         VStack(spacing: 20) {
@@ -56,6 +61,9 @@ struct OverlayModalTextField: View {
                         .frame(width: 24, height: 24)
                         .padding(.leading, 16)
                     PlaceholderModalTextField(placeholder: "Откуда - Москва", text: $departure, destinationText: .constant(""))
+                        .onTapGesture {
+                            showTicketSearchView = true
+                        }
                 }
                 Divider()
                     .background(Color(red: 159/255, green: 159/255, blue: 159/255))
@@ -66,7 +74,10 @@ struct OverlayModalTextField: View {
                         .frame(width: 24, height: 24)
                         .padding(.leading, 16)
                     PlaceholderModalTextField(placeholder: "Куда - Турция", text: $destination, destinationText: $destination)
-                        
+                        .onTapGesture {
+                            showTicketSearchView = true
+                        }
+
                 }
             }
         }
@@ -78,5 +89,12 @@ struct OverlayModalTextField: View {
 }
 
 #Preview {
-    CustomModalTextFieldView(showModal: .constant(true), destinationText: .constant(""))
+    CustomModalTextFieldView(showModal: .constant(true), destinationText: .constant(""), showTicketSearchView: .constant(true))
 }
+
+
+
+
+
+
+
