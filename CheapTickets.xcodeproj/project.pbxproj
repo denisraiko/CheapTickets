@@ -18,6 +18,7 @@
 		3B28D1552C3464340023B399 /* PopularDestinationsViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B28D1542C3464340023B399 /* PopularDestinationsViewModels.swift */; };
 		3B28D1572C3705F70023B399 /* AllTicketsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B28D1562C3705F70023B399 /* AllTicketsButton.swift */; };
 		3B28D1592C3706CC0023B399 /* PriceSubsriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B28D1582C3706CC0023B399 /* PriceSubsriptionView.swift */; };
+		3B28D15B2C3EF9500023B399 /* CustomCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B28D15A2C3EF9500023B399 /* CustomCalendarView.swift */; };
 		3B2ECDF92C24920A009841E2 /* CheapTicketsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2ECDF82C24920A009841E2 /* CheapTicketsApp.swift */; };
 		3B2ECDFB2C24920A009841E2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2ECDFA2C24920A009841E2 /* ContentView.swift */; };
 		3B2ECDFD2C24920C009841E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B2ECDFC2C24920C009841E2 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		3B28D1542C3464340023B399 /* PopularDestinationsViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularDestinationsViewModels.swift; sourceTree = "<group>"; };
 		3B28D1562C3705F70023B399 /* AllTicketsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTicketsButton.swift; sourceTree = "<group>"; };
 		3B28D1582C3706CC0023B399 /* PriceSubsriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceSubsriptionView.swift; sourceTree = "<group>"; };
+		3B28D15A2C3EF9500023B399 /* CustomCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCalendarView.swift; sourceTree = "<group>"; };
 		3B2ECDF52C24920A009841E2 /* CheapTickets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheapTickets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B2ECDF82C24920A009841E2 /* CheapTicketsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheapTicketsApp.swift; sourceTree = "<group>"; };
 		3B2ECDFA2C24920A009841E2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				3B28D1502C3460290023B399 /* PopularDestinations.swift */,
 				3B28D1562C3705F70023B399 /* AllTicketsButton.swift */,
 				3B28D1582C3706CC0023B399 /* PriceSubsriptionView.swift */,
+				3B28D15A2C3EF9500023B399 /* CustomCalendarView.swift */,
 			);
 			path = "Ticket Search View";
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				3B28D1572C3705F70023B399 /* AllTicketsButton.swift in Sources */,
 				3B28D1532C34635E0023B399 /* TicketOffers.swift in Sources */,
 				3B2ECDF92C24920A009841E2 /* CheapTicketsApp.swift in Sources */,
+				3B28D15B2C3EF9500023B399 /* CustomCalendarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

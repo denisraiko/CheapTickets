@@ -87,7 +87,6 @@ struct PlaceholderSearchTextField: View {
                 .foregroundColor(.white)
                 .font(.custom("SF Pro Display", size: 16))
                 .padding(.leading, 10)
-            
         }
     }
 }
